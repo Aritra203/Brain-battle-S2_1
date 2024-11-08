@@ -15,12 +15,6 @@ html, body {
     overflow: hidden;
 }
 
-#page {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-
 canvas {
     position: relative;
     height: 100vh;
@@ -39,7 +33,7 @@ canvas {
     top: 3%;
     border-radius: 20px;
     height: 10vh;
-    width: 30vw;
+    width: 40vw;
     background-color: #ffffff54;
     backdrop-filter: blur(10px);
     padding: 0px 5px;
@@ -61,6 +55,97 @@ canvas {
     text-decoration: none;
     color: #000;
     font-size: 15px;
+    padding-right: 10px;
+}
+#hero
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(../assets/5501609ee45d514d1f2c4a63502045e2.gif);
+    
+}
+#banner
+{
+    /* background-color: ; */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 20px; /* Padding around the text */
+    text-align: center; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: black; /* Text color */
+    position: absolute; /* Position absolute to allow centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center using transform */
+    height: 70vh; /* Set height of hero section */
+    width: 80vw; /* Set width of hero section */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; 
+}
+#social-media { 
+    position: absolute; 
+    left: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+#social-media i { 
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 24px; 
+    color: #333; 
+}
+
+#banner>h1
+{
+    font-size: 80px;
+    position: absolute;
+    z-index: 99;
+    color: #f3f306;
+    text-align: center;
+    top: 38%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#banner>h4{
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    font-weight: 400;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    color: #565656;
+}
+#event-info {
+    margin-top: 40vh; /* Space between h4 and countdown */
+    font-size: 1.2em; /* Font size for countdown */
+    color: #E4E0DD;
+}
+.date i 
+{  
+    margin-right: 10px; 
+}
+.countdown {
+    font-weight: bold; /* Make countdown text bold */
+    margin-bottom: 70px;
+    color: #E4E0DD;
+}
+.countdown i 
+{   margin-left: 30px;
+    margin-right: 4px; 
+}
+
+
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 #page>h1 {
@@ -74,17 +159,6 @@ canvas {
     transform: translate(-50%, -50%);
 }
 
-#page>h4 {
-    font-size: 30px;
-    position: absolute;
-    text-align: center;
-    top: 60%;
-    font-weight: 400;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-    color: #565656;
-}
 
 #page1 {
     position: relative;

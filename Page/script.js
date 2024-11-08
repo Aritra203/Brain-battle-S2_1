@@ -230,3 +230,33 @@ ScrollTrigger.create({
   start: `top top`,
   end: `300% top`,
 });
+
+const targetDate = new Date("December 16, 2024").getTime();
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Format the countdown to 2 digits for each unit
+            const formattedDays = String(days).padStart(2, '0');
+            const formattedHours = String(hours).padStart(2, '0');
+            const formattedMinutes = String(minutes).padStart(2, '0');
+            const formattedSeconds = String(seconds).padStart(2, '0');
+
+            // Display the result in the countdown-timer element
+            document.getElementById("countdown-timer").innerHTML = `${formattedDays}:${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+            // If the countdown is finished, display a message
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown-timer").innerHTML = "00:00:00:00"; // Optionally show 00:00:00:00
+                document.getElementById("countdown").style.display = "none"; // Optionally hide the countdown
+            }
+        }, 1000);
