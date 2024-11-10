@@ -62,7 +62,8 @@ canvas {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background: url(../assets/5501609ee45d514d1f2c4a63502045e2.gif);
+    /* background: url(../assets/5501609ee45d514d1f2c4a63502045e2.gif); */
+    background: #a19fc9;
     
 }
 #banner
@@ -98,24 +99,37 @@ canvas {
     font-size: 24px; 
     color: #333; 
 }
+#social-media a 
+{
+    text-decoration: none; 
+}
+
+#social-media i
+{
+    font-size: 2.5em;
+    text-decoration: none;
+    margin: 2rem 0;
+    margin-left: 15px;
+}
 
 #banner>h1
 {
-    font-size: 80px;
+    font-size: 5rem;
     position: absolute;
     z-index: 99;
     color: #f3f306;
     text-align: center;
-    top: 38%;
+    top: 30%;
     font-weight: 500;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #banner>h4{
-    font-size: 30px;
+    font-size: 2rem;
     position: absolute;
     text-align: center;
-    top: 60%;
+    margin-top: 2rem;
+    top: 55%;
     font-weight: 400;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -123,25 +137,94 @@ canvas {
     color: #565656;
 }
 #event-info {
-    margin-top: 40vh; /* Space between h4 and countdown */
-    font-size: 1.2em; /* Font size for countdown */
+    margin-top: 40vh; 
+    font-size: 1.7em; 
     color: #E4E0DD;
 }
 .date i 
 {  
+    font-size: 2rem;
     margin-right: 10px; 
+    margin-top: 5rem;
 }
 .countdown {
-    font-weight: bold; /* Make countdown text bold */
-    margin-bottom: 70px;
+    font-weight: bold; 
+    margin-top: 5rem;
     color: #E4E0DD;
 }
 .countdown i 
 {   margin-left: 30px;
+    font-size: 2rem;
     margin-right: 4px; 
 }
+.glass-container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+    /* margin-left: 40px;  */
+}
 
+.glass {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional border */
+    padding-left: 2rem; /* Padding for spacing */
+    padding-right: 2rem;
+    padding-top:0.5rem;
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin for spacing above and below */
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.glass h2
+{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #E4E0DD;
+}
+.glass img {
+    margin-bottom: 10px; /* Space between the image and the text */
+    display: block; /* Ensures the image is on a new line */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: 0.5rem;
+    width: 40px; /* Center the image horizontally */
+    height: 40px;
+}
+.glass i
+{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-right: 1rem; 
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
 
+.bounce {
+    animation: bounce 1s infinite; /* Adjust duration as needed */
+}
+
+#about-us
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background: url(../assets/5501609ee45d514d1f2c4a63502045e2.gif); */
+    background: #a19fc9;
+    
+}
 #page {
     position: relative;
     height: 100vh;
