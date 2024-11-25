@@ -323,3 +323,24 @@ const targetDate = new Date("December 16, 2024").getTime();
       page4Animation()
       menuAnimation()
       loaderAnimation()
+
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkVisibility() {
+        const element = document.getElementById('page2-bottom');
+        if (isElementInViewport(element)) {
+            element.classList.add('visible');
+        }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility); // Check visibility on page load

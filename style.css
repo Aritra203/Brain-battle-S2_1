@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Stencil+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Stencil+One&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
 @font-face {
     font-family: neu;
     font-weight: 100;
@@ -124,7 +126,7 @@ nav h3 {
 }
 
 #center {
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     background-color: orange;
     display: flex;
@@ -132,7 +134,7 @@ nav h3 {
     justify-content: space-between;
     border-bottom: 1px solid #0000003c;
     padding-bottom: 2.5vw;
-    clip-path: polygon(18% 0, 100% 0, 100% 43%, 100% 100%, 68% 100%, 32% 100%, 4% 100%, 4% 14%, 10% 13%);
+    /* clip-path: polygon(18% 0, 100% 0, 100% 43%, 100% 100%, 68% 100%, 32% 100%, 4% 100%, 4% 14%, 10% 13%); */
 }
 
 #left h3 {
@@ -170,12 +172,14 @@ nav h3 {
     font-size: 5vw; /* Responsive font size */
     position: absolute;
     z-index: 99;
-    color: #f3f306;
+    background: linear-gradient(to right, #e76202, #100c0e); /* Coral to pink */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent;
     text-align: center;
     top: 25%; /* Adjust top position based on viewport */
     left: 50%;
-    font-family: "Roboto", serif;
-    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
     transform: translate(-50%, -50%);
 }
 
@@ -238,7 +242,7 @@ nav h3 {
     border-radius: 15px; /* Rounded corners */
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Optional border */
+    border: 1px solid rgba(255, 255, 255, 0.5); 
     padding-left: 2rem; /* Padding for spacing */
     padding-right: 2rem;
     padding-top:0.5rem;
@@ -246,6 +250,15 @@ nav h3 {
     margin: 20px 0; /* Margin for spacing above and below */
     margin-top: 40px;
     margin-right: 40px;
+}
+.glass a {
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox for alignment */
+    /* flex-direction: column; Stack image and text */
+    align-items: center; 
+    width: 100%; /* Take full width */
+    /* height: 100%; */
+    justify-content: center; /
 }
 .glass h2
 {
@@ -349,7 +362,7 @@ nav h3 {
     background-color: #FE320A;
     height: 70%;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 20%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     filter: blur(10px);
@@ -597,6 +610,12 @@ nav h3 {
     background-color: #EFEAE3;
     padding: 10vw 2vw;
 }
+.gallery-heading {
+    text-align: center; /* Center the text */
+    font-size: 2.5em; /* Increase the font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+    color: #333; /* Optional: change the text color */
+}
 
 
 .swiper {
@@ -688,10 +707,12 @@ nav h3 {
 #footer-links ul {
     list-style: none;
     padding: 0;
+    cursor: pointer;
 }
 
 #footer-links ul li {
     margin: 5px 0;
+    cursor: pointer;
 }
 
 #footer-links a,
@@ -702,6 +723,7 @@ nav h3 {
 
 #footer-social a {
     margin: 0 10px;
+    cursor: pointer;
 }
 
 #footer h1 {
