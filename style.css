@@ -74,6 +74,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 1vw;
+    margin-bottom: 2rem;
 }
 
 #nav-part2 h4 {
@@ -146,51 +147,61 @@ nav h3 {
     line-height: 8vw;
 }
 
-#banner
-{
-    /* background-color: black; */
+#banner {
     border-radius: 15px; /* Rounded corners */
     backdrop-filter: blur(10px); /* Frosted glass effect */
-    padding: 20px; /* Padding around the text */
+    padding: 5% 2%; /* Responsive padding */
     text-align: center; 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     color: black; /* Text color */
     position: absolute; /* Position absolute to allow centering */
-    top: 50%; /* Center vertically */
+    top: 57%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center using transform */
-    height: 70vh; /* Set height of hero section */
+    height: 80vh; /* Set height of hero section */
     width: 80vw; /* Set width of hero section */
     display: flex; /* Use flexbox for centering */
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center vertically */
     align-items: center; 
-    /* clip-path: polygon(0% 15%, 15% 15%, 28% 0, 85% 0%, 100% 0, 100% 15%, 100% 85%, 83% 88%, 72% 100%, 15% 100%, 0 100%, 0% 85%); */
 }
-#banner>h1
-{
-    font-size: 5rem;
+
+#banner > h1 {
+    font-size: 5vw; /* Responsive font size */
     position: absolute;
     z-index: 99;
     color: #f3f306;
     text-align: center;
-    top: 30%;
+    top: 25%; /* Adjust top position based on viewport */
     left: 50%;
     font-family: "Roboto", serif;
     font-weight: 400;
     transform: translate(-50%, -50%);
 }
-#banner>h4{
-    font-size: 2rem;
+
+#banner > h4 {
+    font-size: 2.5vw; /* Responsive font size */
     position: absolute;
     text-align: center;
-    margin-top: 2rem;
-    top: 55%;
+    margin-top: 2.5rem;
+    top: 51%; /* Adjust top position based on viewport */
+    margin-bottom: 4rem;
     font-weight: 400;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
     color: #565656;
+}
+@media (max-width: 600px) {
+    #banner > h1 {
+        font-size: 8vw; /* Larger font size for smaller screens */
+        top: 25%; /* Adjust top position */
+    }
+
+    #banner > h4 {
+        font-size: 4vw; /* Larger font size for smaller screens */
+        top: 50%; /* Adjust top position */
+    }
 }
 #event-info {
     margin-top: 40vh; 
@@ -305,22 +316,10 @@ nav h3 {
     top: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 80px;
+    font-size: 13vh;
     font-weight: 500;
 }
 
-#part1>h4 {
-    position: absolute;
-    left: 50%;
-    top: 57%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 35px;
-    font-weight: 400;
-    white-space: nowrap;
-    color: #565656;
-    z-index: 99;
-}
 
 #part2 {
     position: relative;
