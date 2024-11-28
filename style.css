@@ -1085,3 +1085,49 @@ nav h3 {
       
     }
 }
+
+@media (max-width: 414px) {
+    #banner {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #banner h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    #banner h4 {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    #event-info {
+        flex-direction: column; /* Stack vertically on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .date, .countdown {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        margin: 5px 0; /* Adjust margin for stacking */
+    }
+
+    .glass-container {
+        flex-direction: column; /* Stack glass items vertically */
+        align-items: center; /* Center glass items */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    .glass {
+        width: 100%; /* Full width for glass items */
+        margin: 5px 0; /* Add margin between glass items */
+    }
+
+    .glass img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Ensure images are responsive */
+#banner img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
