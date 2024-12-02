@@ -28,8 +28,20 @@
 html, body {
     height: 100%;
     width: 100%;
+    /* cursor: none; */
 }
-
+/* Add this to your existing CSS file or within a <style> tag in the <head> section */
+.custom-cursor {
+    position: fixed;
+    width: 40px; /* Size of the cursor */
+    height: 40px; /* Size of the cursor */
+    background-color: rgb(255, 208, 0); /* Color of the cursor */
+    border-radius: 50%; /* Make it round */
+    pointer-events: none; /* Prevent it from interfering with mouse events */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: transform 0.1s ease; /* Smooth animation */
+    z-index: 9999; /* Make sure it's on top of other elements */
+}
 
 canvas {
     position: relative;
