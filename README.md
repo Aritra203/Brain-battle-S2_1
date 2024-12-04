@@ -9,7 +9,7 @@ The website serves as a landing page for the **Brain Battle 2024 Seasn 2** event
 ### Key Features
 
 - **Event Information**: Overview of the Brain Battle 2024 competition.
-- **Registration Button**: Redirects users to the official registration page on [Unstop](https://unstop.com/hackathons/brain-battle-season-2-coding-junction-1185487).
+- **Registration Button**: Redirects users to the official registration page on [Unstop-Brain Battle](https://unstop.com/hackathons/brain-battle-season-2-coding-junction-1185487).
 
 ## Tech Stack
 
