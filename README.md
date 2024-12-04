@@ -1,6 +1,7 @@
 # Brain Battle 2024 Seaon 2
 
 Welcome to **Brain Battle 2024 Season 2**, a simple and elegant platform designed to provide information and facilitate user registration for the Brain Battle 2024 competition.
+![brain battle logo](https://github.com/user-attachments/assets/8effe5bc-59a8-4905-a745-7692aa52662b)
 
 ## Website Overview
 
