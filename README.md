@@ -52,7 +52,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 For any inquiries or feedback, please reach out to us at:
 
 Email: contact@brainbattle2024.tech
-Website: Brain Battle 2024
+
 
 
 
